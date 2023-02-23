@@ -8,6 +8,14 @@ const { body, validationResult, check } = require('express-validator')
 
 // router.use(bodyParser.json())
 const router = express.Router()
+// body-parser middleware
+router.use(bodyParser.urlencoded({ extended: false }))
+
+router.post('/', (req, res) => {
+    console.log(req.body);
+res.json(req.body)
+});
+
 
 router.get('/', (req, res, next) => {
 
