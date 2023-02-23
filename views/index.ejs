@@ -1,0 +1,37 @@
+<%- include('partials/head')  %> 
+
+<body>
+
+
+    <div id="main-wrapper">
+
+        <%- include('partials/header')  %>
+        <%- include('partials/nav')  %> 
+
+        <% if ( page === 'pages' ) { %>
+        <%- include('page/home.ejs')  %> 
+        <% } %>
+
+        <% if ( page === 'about' ) { %>
+        <%- include('page/about.ejs')  %> 
+        <% } %>
+
+        <% if ( page === 'buku' ) { %>
+        <%- include('page/buku.ejs')  %> 
+        <% } %>
+
+        <% if ( page === 'peminjam' ) { %>
+        <%- include('page/peminjam.ejs')  %> 
+        <% } %>
+
+        <% if ( page === 'add-peminjam' ) { %>
+        <%- include('page/add-peminjam.ejs')  %> 
+        <% } %>
+
+
+
+        <%- include('partials/footer')  %> 
+
+
+
+
