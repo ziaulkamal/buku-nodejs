@@ -19,6 +19,7 @@ const aboutRouter = require('./routes/about')
 const bukuRouter = require('./routes/buku')
 const peminjamRouter = require('./routes/peminjam')
 const addPeminjamRouter = require('./routes/add-peminjam')
+const test = require('./routes/test')
 // const testRouter = require('./routes/test')
 
 

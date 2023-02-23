@@ -9,7 +9,8 @@ const router = express.Router()
 
 
 router.use(methodOverride('_method'))
-
+// body-parser middleware
+router.use(bodyParser.urlencoded({ extended: false }))
 const Peminjam = require('../models/peminjam')
 const { findOne } = require('../models/peminjam')
 
@@ -38,7 +39,7 @@ router.use(flash())
 //     res.send(req.body)
 // })
 
-router.get('/new', (req, res) => {
+router.get('/', (req, res) => {
     res.render('index', {
       'page': 'add-peminjam',
       'title': 'Form Tambah Data'
